@@ -19,13 +19,13 @@ of the array elements defines a useful structure on this array. In particular, t
     2- compute the index \(k\) for which \(sum_{i=0}^{k} a_{i} \geq s\). if such a \(k\) is not found return minlength.<br\>
     3- set minlength\(=k\), \(j=k+1\). 
     4- while \(i<j\) and \(j<n\) do: <br/>
-       set cursum\(=\text{cursum-num[i]\)<br/>
-       if cursum\geq s<br/>
-               i=i+1, minlength=min(minlength,j-i+1)<br/>
+       set cursum\(=\text{cursum-a[i]\)<br/>
+       if \(cursum\geq s\)<br/>
+               \(i=i+1\), minlength\(=min(\text{minlength},j-i+1)\)<br/>
   
        else<br/>
             
-            set cursum\(=\text{cursum+num[j]\), j=j+1
+            set cursum\(=\text{cursum+a[j], j=j+1\)
   
    
   
