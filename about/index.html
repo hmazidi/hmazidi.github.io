@@ -14,19 +14,7 @@ of the array elements defines a useful structure on this array. In particular, t
       <p> Another observation is that when we have computed the sum of a subarray it is really easy to compute the next subarray as it requires 
         adding one element. Thus we may use these structures defined by the conditions of the problem, i.e., positivity of elements and having contiguous array.
      </p>
-<p> 1- set \(i=0,\text{minlength}=0, \text{cursum}=0\);<br/>
-    2- compute the index \(k\) for which \(\sum_{i=0}^{k} a_{i} \geq s\). if such a \(k\) is not found return minlength.<br/>
-    3- set minlength\(=k\), \(j=k+1\).<br/>
-    4- while \(j<n\)  if \(i<j\)  do: <br/>
-      
-       if \(\text{cursum}-a[i]\geq s\)<br/>
-                
-               \(\text{cursum}=\text{cursum}-a[i]\),\(i=i+1\), minlength\(=min(\text{minlength},j-i+1)\)<br/>
-  
-       else<br/>
-            
-            set cursum\(=\text{cursum}+a[j], j=j+1\)
-  
+<img src="images/minlengthsubarrayc++.png" class="flr" alt="minlengthsubarrayc++" width="300" height="240"
    
   
            
