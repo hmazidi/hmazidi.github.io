@@ -18,7 +18,7 @@ of the array elements defines a useful structure on this array. In particular, t
 <p> 1- set \(i=0,\text{minlength}=0, \text{cursum}=0\);<br/>
     2- compute the index \(k\) for which \(\sum_{i=0}^{k} a_{i} \geq s\). if such a \(k\) is not found return minlength.<br/>
     3- set minlength\(=k\), \(j=k+1\).<br/>
-    4- while \(i<j\) and \(j<n\) do: <br/>
+    4- while \(j<n\) check if \(i<j\) and do: <br/>
        set cursum\(=\text{cursum}-a[i]\)<br/>
        if \(\text{cursum}\geq s\)<br/>
                \(i=i+1\), minlength\(=min(\text{minlength},j-i+1)\)<br/>
