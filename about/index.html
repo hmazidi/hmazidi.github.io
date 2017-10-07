@@ -8,4 +8,6 @@ Given an array \(A\) of \(n\) positive integers and a positive integer \(s\), fi
 <p>As a problem solver we need to pay attention to the conditions of the problem in order to adjust to it. In this problem, the positiveness
 of the array elements defines a useful structure on this array. In particular, this positive structure implies the following:
   
-  <p> Let \(k\in [0,n-1)\). Then if \(\sum_{i=0}^{k} a_{i} > s\), it follows that \(\forall j>k, \sum_{i=0}^{j} a_{i} > s\).
+  <p> Let \(k\in [0,n-1)\). Then if \(\sum_{i=0}^{k} a_{i} \geq s\), it follows that \(\forall j>k, \sum_{i=0}^{j} a_{i} \geq s\).
+    <p> Simply put, if we encounter a contiguous subarray with sum\(\geq s\) we can safely ignore the first element of the current subarray 
+      as it contains no additional information.<\p>
