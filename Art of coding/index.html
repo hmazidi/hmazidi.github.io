@@ -48,10 +48,12 @@ of the array elements defines a useful structure on this array. In particular, t
 	  </p>
 	  
  
-<p> Given an array of \(n\) positive integers, find the number of subarrays 
-such that product of the elements of those subarrays are less than \(k\). <\p>
+<p> <b> Given an array of \(n\) positive integers, find the number of subarrays 
+	such that product of the elements of those subarrays are less than \(k\).</b> </p>
 	
-	
+	<p> A similar problem to one of the previous subarray type problems. In fact, the idea is the same. Just exploit positiveness and 
+	subarray structure to solve it efficiently. In particular, we want to  maintain a curprod and each time the curprod exceeds the target 
+		we remove the first element from the consideration and check the next subarray. 
 
  </body>
 </html>
