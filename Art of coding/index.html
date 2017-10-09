@@ -16,7 +16,10 @@
 <p>As a problem solver we need to pay attention to the conditions of the problem in order to adjust to it. In this problem, the positiveness
 of the array elements defines a useful structure on this array. In particular, this positive structure implies the following:</p>
   
-  <p> Let \(k\in [0,n-1)\). Then if \(\sum_{i=0}^{k} a_{i} \geq s\), it follows that \(\forall j>k, \sum_{i=0}^{j} a_{i} \geq s\).</p>
+ <p> In this section we discuss a general algorithmic apprach, named sliding window, to solve some of problems related to arrays having 
+	 specific structures.</p>
+	  
+	  <p> Let \(k\in [0,n-1)\). Then if \(\sum_{i=0}^{k} a_{i} \geq s\), it follows that \(\forall j>k, \sum_{i=0}^{j} a_{i} \geq s\).</p>
     <p> Simply put, if we encounter a contiguous subarray with sum\(\geq s\) we can safely ignore the first element of the current subarray 
       as it contains no additional information.</p>
       <p> Another observation is that when we have computed the sum of a subarray it is really easy to compute the next subarray as it requires 
@@ -52,8 +55,7 @@ of the array elements defines a useful structure on this array. In particular, t
 	such that product of the elements of those subarrays are less than \(k\).</b> </p>
 	
 	<p> A similar problem to one of the previous subarray type problems. In fact, the idea is the same. Just exploit positiveness and 
-	subarray structure to solve it efficiently. In particular, we want to  maintain a curprod and each time the curprod exceeds the target 
-		we remove the first element from the consideration and check the next subarray. 
+	subarray structure to solve it efficiently. First, we focus on a \(O(n)\) algorithm via sliding window.
 
  </body>
 </html>
