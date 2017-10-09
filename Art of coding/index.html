@@ -24,7 +24,7 @@ of the array elements defines a useful structure on this array. In particular, t
 	  
 	  <p> Let \(k\in [0,n-1)\). Then if \(\sum_{i=0}^{k} a_{i} \geq s\), it follows that \(\forall j>k, \sum_{i=0}^{j} a_{i} \geq s\).</p>
     <p> Simply put, if we encounter a contiguous subarray with sum\(\geq s\) we can safely ignore the first element of the current subarray 
-      as it contains no additional information.</p>
+      as it contains no additional information. This is exactly an instance of a sliding window.</p>
       <p> Another observation is that when we have computed the sum of a subarray it is really easy to compute the next subarray as it requires 
         adding one element. Thus we may use these structures defined by the conditions of the problem, i.e., positivity of elements and having contiguous array.
      </p>
