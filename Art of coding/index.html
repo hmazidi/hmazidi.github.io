@@ -64,6 +64,11 @@ of the array elements defines a useful structure on this array. In particular, t
 	
 	<p> A similar problem to one of the previous subarray type problems. In fact, the idea is the same. Just exploit positiveness and 
 	subarray structure to solve it efficiently. First, we focus on a \(O(n)\) algorithm via sliding window.
+		
+	<p> We start with left and right indices set to zero. We move the right index forward in two cases: 1) eighter the left index coincides
+		with the right index, and 2) when the product of a subarray within the current window is smaller that \(k\). The reason for the first case is
+		trivial. However, in the second case positivity of integers imply that all subsequent subarrays in the current window have product smaller 
+		than \(k\).
 
  </body>
 </html>
