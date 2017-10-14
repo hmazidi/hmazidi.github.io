@@ -79,7 +79,7 @@ of the array elements defines a useful structure on this array. In particular, t
 	
 	<p> Given a string, find the length of the longest substring without repeating characters.</p>
 	
-	The basic idea here is to dymaically update a hashmap with keys set to visited characters and their last location as their values.
+	<p>The basic idea here is to dymaically update a hashmap with keys set to visited characters and their last location as their values.
 	The tail of sliding window moves forward if we encounter the case where we have the current character in the hashmap keys. Interestingly, here 
 	we want to update the tail or left index of the window to the right of the current character value in the hashmap. Note that when we
 	move forward the left index like this, we are essentially ignoring the keys or characters that occur before the new left index. Therefore,
