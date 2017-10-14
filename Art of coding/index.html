@@ -13,10 +13,12 @@
 	  
 	  <article>
 	  
-	  <p> In this section we discuss a general algorithmic approach, named <em>sliding window</em>, to solve some of problems related to arrays having 
+	  <p> In this section we discuss combination of two general algorithmic approaches, namely <em>sliding window</em> and <em>hashmap</em>, to solve some of problems related to arrays having 
 	 specific structures. The basic idea behind sliding window is that when iterating through an array the relevent information 
 	  in the some of the visited elements is zero. In particular, these elements form a contiguous subarray. Hence, we as well may keep a window of
 	  certain size and sldie it forward as we iterate. The beauty of sliding window is that it reduces the computation to \(O(n)\).</p>
+		  <p> Along the same line of idea, hashmap provides a fast search medium to store information that were already obtained. 
+			  This would reduce the computation cost to e.g., \(O(n)\) in a trade off with \(O(n)\) space complexity.</p>
 <p> <b> Given an array \(A\) of \(n\) positive integers and a positive integer \(s\), find the minimal length of a contiguous subarray of which the sum \(≥ s\). If there isn't one, return \(0\) instead.
 	</b> </p>
 <p>As a problem solver we need to pay attention to the conditions of the problem in order to adjust to it. In this problem, the positiveness
