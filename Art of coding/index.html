@@ -38,7 +38,28 @@ of the array elements defines a useful structure on this array. In particular, t
 <code class="language-cpp">
 Class Solution{
 public:
-int SubArrayLen(int s,vector&lt int&gt & nums>
+int SubArrayLen(int s,vector&lt int&gt & nums>){
+if(nums.empty()) return 0;
+int left=0;
+int right=0;
+int cursum=0;
+int MinLength=nums.size()+1;
+
+while(right<nums.size()){
+cursum+=nums[right];
+if (cursum>=s){
+MinLength=min(MinLength,right-left+1);
+while(cursum-nums[left]>=s){
+cursum-=nums[left];
+left++;
+MinLength=min(MinLength,right-left+1);
+}
+}
+right++;
+}
+return MinLength==nums.size()+1 ? 0:MinLength
+}
+};
 
 </code>
 </pre>
