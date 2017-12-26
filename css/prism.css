@@ -3,8 +3,8 @@
  * Inspired by Github syntax coloring
  */
 
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*="language-cpp"],
+pre[class*="language-cpp"] {
     color: #393A34;
     font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     direction: ltr;
