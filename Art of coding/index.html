@@ -45,11 +45,11 @@ int right=0;
 int cursum=0;
 int MinLength=nums.size()+1;
 
-while(right<nums.size()){
+while(right&lt nums.size()){
 cursum+=nums[right];
 if (cursum>=s){
 MinLength=min(MinLength,right-left+1);
-while(cursum-nums[left]>=s){
+while(cursum-nums[left]&gt =s){
 cursum-=nums[left];
 left++;
 MinLength=min(MinLength,right-left+1);
