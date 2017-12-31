@@ -89,6 +89,19 @@ Class Solution{
 public:
 int MaxSubArrayLen(int k,vector&lt int&gt & nums>){
  if (nums.emty()) return 0;
+ int maxlength=nums.size()+1;
+ unordered_map&ltint,int&gt AllSums;
+ int cursum=0;
+ AllSums[0]=-1;
+ for (int i=0;i&lt nums.size();i++){
+     cursum=cursum+nums[i];
+     if(AllSums.find(cursum)==AllSums.end()) AllSums.emplace(cursum,i);
+     if(AllSums.find(cursum-k)!=AllSums.end()) maxlength=max(maxlength,i-AllSums[cursum-k];
+ }
+ return maxlength==nums.size()+1?0:maxlength;
+ }
+ };
+     
 </code>
 </pre>
 	</p>
