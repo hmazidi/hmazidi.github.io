@@ -39,25 +39,25 @@ of the array elements defines a useful structure on this array. In particular, t
 Class Solution{
 public:
 int SubArrayLen(int s,vector&lt int&gt & nums>){
-if(nums.empty()) return 0;
-int left=0;
-int right=0;
-int cursum=0;
-int MinLength=nums.size()+1;
+ if(nums.empty()) return 0;
+ int left=0;
+ int right=0;
+ int cursum=0;
+ int MinLength=nums.size()+1;
 
-while(right&lt nums.size()){
-cursum+=nums[right];
-if (cursum>=s){
-MinLength=min(MinLength,right-left+1);
-while(cursum-nums[left]&gt =s){
-cursum-=nums[left];
-left++;
-MinLength=min(MinLength,right-left+1);
-}
-}
-right++;
-}
-return MinLength==nums.size()+1 ? 0:MinLength
+ while(right&lt nums.size()){
+   cursum+=nums[right];
+   if (cursum>=s){
+       MinLength=min(MinLength,right-left+1);
+       while(cursum-nums[left]&gt =s){
+           cursum-=nums[left];
+           left++;
+           MinLength=min(MinLength,right-left+1);
+       }
+   }
+   right++;
+ }
+ return MinLength==nums.size()+1 ? 0:MinLength
 }
 };
 
@@ -89,9 +89,9 @@ Class Solution{
 public:
 int MaxSubArrayLen(int k,vector&lt int&gt & nums>){
  if (nums.emty()) return 0;
-<\code>
-<\pre>
-
+</code>
+</pre>
+	</p>
 	<!--  <p>  <img src="https://hmazidi.github.io/images/maxlengthsubarrayc++.png" class="flr" alt="maxlengthsubarrayc++" width="400" height="400">
                         </p>
 	  
