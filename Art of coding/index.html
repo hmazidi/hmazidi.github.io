@@ -79,10 +79,7 @@ return MinLength==nums.size()+1 ? 0:MinLength
 		  index \(\text{left}\). It seems that we need to compute bunch of summations every time we increment the right index. However,
 			  
 			  all we need is to store these sums somewhere and whenever we need them we can retreive them fast. In fact, a <em>hashmap</em> is 
-			  presicely based on this idea. The idea is shown below </p>
-			  
-			<p>  <img src="https://hmazidi.github.io/images/array.png" class="flr" alt="minlengthsubarrayc++" width="350" height="250">
-                        </p>
+			  presicely based on this idea. 
 				
 	  <p>Therefore all we need to compute is cursum and storing it in a hashmap <em>AllSums</em> along with its index. Note that it is possible to find subarrays with the same sum. In this case we only need to
 	       store the one with minimum left index!
