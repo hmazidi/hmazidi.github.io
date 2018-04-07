@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>composing the code!</title>
+		<title>making sense of the richest data!</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		    <link rel="stylesheet" type="text/css" href="/css/prism.css">
@@ -13,3 +13,6 @@
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 <article>
+<h3>
+Hi!
+<h3>
