@@ -1,7 +1,10 @@
+*{
+     font-family: AlethiaPro-Regular; 
+}
 body {
     margin: 60px auto;
     width: 70%;
-    font-family: AlethiaPro-Regular !important; 
+    font-family: AlethiaPro-Regular; 
 }
 nav ul, footer ul {
     font-family:AlethiaPro-Regular;
