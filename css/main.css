@@ -1,11 +1,8 @@
-*{
-     font-family: Arial; 
-}
-<!--body {
+body {
     margin: 60px auto;
     width: 70%;
-    font-family: AlethiaPro-Regular; 
-}-->
+    font-family: Arial; 
+}
 nav ul, footer ul {
     font-family:AlethiaPro-Regular;
     padding: 0px;
