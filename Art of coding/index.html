@@ -133,22 +133,22 @@ an index array of length \(N+1\) with all ones. As we traverse \(A\), if we find
 we set the value of its corresponding index to 0. At the end, we traverse back this array to get the first index with value 1.
 </p>
 <pre>
-		<code class="language-pyhton">
-		Class Solution:
-			def findMissingPosInt(nums):
-				num_el=len(nums)
-				indxArray=[1]*(num_el+1)
+<code class="language-pyhton">
+Class Solution:
+	def findMissingPosInt(nums):
+		num_el=len(nums)
+		indxArray=[1]*(num_el+1)
 
-				for i in range(num_el):
-					if nums[i]>0 and nums[i]<=num_el:
-						indxArray[nums[i]-1]=0
+		for i in range(num_el):
+			if nums[i]>0 and nums[i]<=num_el:
+				indxArray[nums[i]-1]=0
 					
-				for i in range(num_el+1):
-					if indxArray[i]==1:
+		for i in range(num_el+1):
+			if indxArray[i]==1:
 					
-						return i+1
-		</code>
-		</pre>
+				return i+1
+</code>
+</pre>
 	 
  </body>
 </html>
