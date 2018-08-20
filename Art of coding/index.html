@@ -132,8 +132,9 @@ positive elements, we can assume that the missing positive number is at most \(N
 an index array of length \(N+1\) with all ones. As we traverse \(A\), if we find a positive integer, 
 we set the value of its corresponding index to 0. At the end, we traverse back this array to get the first index with value 1.
 </p>
+<p>
 <pre>
-<code class="language-matlab">
+<code class="language-go">
 Class Solution:
 	def findMissingPosInt(nums):
 		num_el=len(nums)
@@ -149,7 +150,7 @@ Class Solution:
 				return i+1
 </code>
 </pre>
-	 
+</p>	 
  </body>
 </html>
 
