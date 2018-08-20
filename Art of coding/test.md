@@ -16,6 +16,6 @@ class Foo:
     self.n = 10
 ```
 
-Given an array \(A\), nums, and a target value \(k\), find the maximum length of a subarray that sums to \(k\).
+Given an array $$A$$, nums, and a target value $$k$$, find the maximum length of a subarray that sums to $$k$$.
 
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
