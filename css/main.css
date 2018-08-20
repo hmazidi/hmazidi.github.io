@@ -1,10 +1,17 @@
+@font-face {font-family: 'AlethiaPro-Regular';src: url('webfonts/3602DD_0_0.eot');src: url('webfonts/3602DD_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3602DD_0_0.woff2') format('woff2'),url('webfonts/3602DD_0_0.woff') format('woff'),url('webfonts/3602DD_0_0.ttf') format('truetype');}
+
 body {
     margin: 60px auto;
     width: 70%;
-    font-family: Arial; 
+    font-family: AlethiaPro-Regular, Arial; 
 }
+
+h1 {
+    font-family: AlethiaPro-Regular;  
+}
+
 nav ul, footer ul {
-    font-family:Arial;
+    /*font-family:Arial;*/
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -24,7 +31,7 @@ h1 {
     font-size: 1em;
     /*font-family: Sans-Serif;*/
 }
-<!--'Helvetica', 'Arial', 'Sans-Serif'-->
+/*<!--'Helvetica', 'Arial', 'Sans-Serif'-->*/
 p {
     font-size: 1.5em;
     line-height: 1.4em;
