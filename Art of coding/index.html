@@ -109,6 +109,46 @@ int MaxSubArrayLen(int k,vector&lt int&gt & nums>){
 </code>
 </pre>
 	</p>
+
+	 
+	<p> To see another interesting idea of storing intermediate results, consider the following 
+		problem: </p>
+
+
+<p>
+   <b> Given an array \(A\), nums, of \(N\) integers, find the smallest positive integer that is 
+	   missing in \(A\).</b>
+</p>
+<p>Obviously, we can sort the array nums and look for the first positive integer
+	that is missing. This approach natually has \(O(N \log(N))\) complexity. Can we do better?
+	 We start with the need for sorting. The difficulty arises from the observation that as we
+	 traverse the array, the collection of elements contain  critical information about the missing positive integer. 
+	 For instance, consider \(A=[5, 1, 2, 3, 4]\). The first element of \(A\), 5, only becomes
+	 critical when we understand that the element 4 exists, which happens at the very end. The single fact that 
+	 5 occurs sooner than 4, seems to force us to traceback the array each time a positive element is found.   
+</p>
+<p>Here, we devise a strategy to encode the information of intermediate positive elements. As \(A\) has at most \(N\) 
+positive elements, we can assume that the missing positive number is at most \(N+1\). Thus, we construct 
+an index array of length \(N+1\) with all ones. As we traverse \(A\), if we find a positive integer, 
+we set the value of its corresponding index to 0. At the end, we traverse back this array to get the first index with value 1.
+</p>
+<pre>
+		<code class="language-pyhton">
+		Class Solution:
+			def findMissingPosInt(nums):
+				num_el=len(nums)
+				indxArray=[1]*(num_el+1)
+
+				for i in range(num_el):
+					if nums[i]>0 and nums[i]<=num_el:
+						indxArray[nums[i]-1]=0
+					
+				for i in range(num_el+1):
+					if indxArray[i]==1:
+					
+						return i+1
+		</code>
+		</pre>
 	 
  </body>
 </html>
