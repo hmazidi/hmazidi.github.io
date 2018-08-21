@@ -46,6 +46,9 @@ pre[class*="language-"] {
   padding: 1em;
   margin: .5em 0;
   overflow: auto;
+  outline: dotted;
+  outline-width: .1em;
+  outline-color: purple;
 }
 
 /* Inline code */
