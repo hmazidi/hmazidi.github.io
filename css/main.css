@@ -4,6 +4,15 @@
     src: url('/webfonts/3602DD_0_0.eot?#iefix') format('embedded-opentype'), url('/webfonts/3602DD_0_0.woff2') format('woff2'), url('/webfonts/3602DD_0_0.woff') format('woff'),url('/webfonts/3602DD_0_0.ttf') format('truetype');
 }
 
+/* defining classes */
+.problemStatement{
+
+    outline-style:double;
+    outline-width:.14em;
+    outline-offset:.5em;
+}
+
+
 body {
     margin: 60px auto;
     width: 70%;
@@ -12,6 +21,8 @@ body {
 
 h1 {
     font-family: AlethiaPro-Regular;  
+    font-size: 1em;
+
 }
 
 nav ul, footer ul {
@@ -26,16 +37,12 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #111;
 }
 a:hover {
     text-decoration: underline;
 }
-h1 {
-    font-size: 1em;
-    /*font-family: Sans-Serif;*/
-}
-/*<!--'Helvetica', 'Arial', 'Sans-Serif'-->*/
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
