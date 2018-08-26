@@ -5,6 +5,14 @@
 }
 
 /* defining classes */
+.splashHeader{
+    width: 55%;
+    text-align: right;
+    font-size: 1.6em;
+    color: crimson;
+    background-color: antiquewhite;
+}
+
 .problemStatement{
 
     outline-style:double;
