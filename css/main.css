@@ -6,6 +6,27 @@
 
 /* defining classes */
 .splashHeader{
+    width: 100%;
+    text-align: left;
+    font-size: 1.5em;
+    font-family: Century,"Times New Roman",serif;
+    font-weight: bolder;
+    color: #850a86;
+    /* background-color: antiquewhite; */
+    border-bottom: solid;
+    /* border-right: solid; */
+    border-bottom-width: .1em;
+}
+user agent stylesheet
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+
     width: 55%;
     text-align: right;
     font-size: 1.6em;
