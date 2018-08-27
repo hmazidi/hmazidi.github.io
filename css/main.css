@@ -5,17 +5,15 @@
 }
 
 /* defining classes */
-.splashHeader{
+.splashHeader {
     width: 100%;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 3rem;
     font-family: Century,"Times New Roman",serif;
     font-weight: bolder;
-    color: #850a86;
-    /* background-color: antiquewhite; */
+    color: black;
     border-bottom: solid;
-    /* border-right: solid; */
-    border-bottom-width: .1em;
+    border-bottom-width: .04em;
 }
 user agent stylesheet
 h2 {
@@ -43,9 +41,10 @@ h2 {
 
 
 body {
-    margin: 60px auto;
-    width: 70%;
-    font-family: AlethiaPro-Regular, Arial; 
+    margin: 10px auto;
+    width: 90%;
+    font-family: AlethiaPro-Regular, Arial;
+    background-color: #f4ebf9; 
 }
 
 h1 {
