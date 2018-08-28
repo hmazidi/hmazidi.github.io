@@ -41,9 +41,10 @@ h2 {
 
 .postSummary{
     float: right;
-    width:80%;
+    width: 65%;
     padding-bottom: 10px;
     border-bottom:double;
+    margin-right:20%;
 }
 .postDate{
     float: left;
