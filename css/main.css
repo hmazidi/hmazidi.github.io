@@ -39,6 +39,21 @@ h2 {
     outline-offset:.5em;
 }
 
+.postSummary{
+    float: right;
+    width:80%;
+    padding-bottom: 10px;
+    border-bottom:double;
+}
+.postDate{
+    float: left;
+    clear:both;
+    width:10%;
+}
+
+.postHeader{
+    list-style:none;
+}
 
 body {
     margin: 10px auto;
