@@ -5,7 +5,9 @@
 }
 
 /* defining classes */
-
+.intro{
+    padding:0 10px;
+}
 .top_nav{
     float:right;
 }
@@ -128,7 +130,7 @@ outline-width:.01em;
 }
 body {
     margin: 0px auto;
-    width: 90%;
+    width: 1000%;
     font-family: AlethiaPro-Regular, Arial;
     background-color: #f4ebf9; 
 }
