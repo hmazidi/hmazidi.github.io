@@ -215,25 +215,28 @@ header{
         width:320px;
         position:absolute;
         right:50%;
-        margin: 0;
+        margin: 3px 0;
         transform: translateX(50%);
+        text-align: center;
     }
 
     .author_info p{
         font-size:1em;
-        padding-left:30px;
+        padding-left:0px;
         margin: 0;
     }
     
      .author_info p.title{
         font-size:.8em;
-        padding-left:30px;
 
+        margin: auto;
+        padding-left: 0;
     }
     
     .author_info p.institute{
         font-size:.8em;
-        padding-left:50px;
+        padding-left:0px;
+        margin: 0;
     }
 }
 /*ul.posts { 
