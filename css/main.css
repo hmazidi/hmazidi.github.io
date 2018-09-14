@@ -222,21 +222,35 @@ header{
 
     .author_info p{
         font-size:1em;
+        font-weight:800;
         padding-left:0px;
-        margin: 0;
+        /*! margin: auto; */
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+        width: 100%;
     }
     
      .author_info p.title{
-        font-size:.8em;
+        font-size:.7em;
 
         margin: auto;
         padding-left: 0;
+        width: 100%;
+        position: absolute;
+        right: 50%;
+        top: 30px;
+        transform: translateX(50%);
     }
     
     .author_info p.institute{
-        font-size:.8em;
+        font-size:.7em;
         padding-left:0px;
         margin: 0;
+        position: absolute;
+        top: 45px;
+        right: 50%;
+        transform: translateX(50%);
     }
 }
 /*ul.posts { 
