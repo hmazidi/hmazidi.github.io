@@ -40,7 +40,7 @@
     font-weight:600;
     font-size: .8em;
     text-align: center;
-    padding-bottom: 0px;
+    padding-bottom: 1px;
     letter-spacing: normal;
     padding-left: 55px;
 }
@@ -205,14 +205,18 @@ footer {
 
 @media (max-width:320px){
 
+header{
+    width: auto;
+}
     #top_nav{
         display:none;
     }
     .author_info{
-        max-width:320px;
+        width:100%;
         position:absolute;
         right:50%;
         transform:translateX(50%)
+        height:auto;
     }
 
     .author_info p{
