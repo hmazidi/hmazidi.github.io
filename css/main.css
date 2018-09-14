@@ -206,7 +206,7 @@ footer {
 @media (max-width:375px){
 
 header{
-    width: auto;
+    width: 100%;
 }
     #top_nav{
         display:none;
