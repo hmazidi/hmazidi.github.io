@@ -208,7 +208,14 @@ footer a{
     text-decoration-style: dotted;
         
 }
-
+.email-icon{
+    
+    height: 20px;
+}
+#email{
+    position: relative;
+    bottom: 3px;
+}
 @media (max-width: 960px) and (min-width:376px){
 
     #top_nav{
