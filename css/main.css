@@ -7,6 +7,19 @@
 /* defining classes */
 .intro{
     padding:0 10px;
+    width: 600px;
+    border-color: #90833d;
+    border-style: dotted;
+    border-width: .1em;
+}
+.intro:hover{
+    
+ 
+}
+.intro p a{
+    color: black;
+    text-decoration: underline;
+    text-decoration-style:dotted;
 }
 .top_nav{
     float:right;
@@ -26,6 +39,7 @@
     margin-bottom: 1px;
     display: inline-block;
     letter-spacing: 4px;
+    color: #fed97f;
 }
 
 .author_info p.title{
@@ -72,7 +86,7 @@ h2 {
 }
 .white_full_box{
     padding: 0 0;
-    background:white;
+    background:#090909;
     overflow: hidden;
     height: 90px;
     margin-bottom: 1px;
@@ -109,8 +123,9 @@ h2 {
 #top_nav ul{
     text-align: center;
     padding: 0 0;
-    margin:0 0;
+    margin:0;
     display:  inline-block;
+    height: 100%;
 }
 #top_nav ul li{
     font-weight:bold;
@@ -130,19 +145,17 @@ h2 {
     padding-left: 40px;
     text-align:center;
     overflow:hidden;
-    transition:background-color .3s ease-in-out;
+    transition:border-color .3s ease-in-out;
     float:  left;
     height: 100%;
+    color: #eae5c7;
 }
 
 #top_nav ul li a:hover {
 /*     text-decoration:underline; */
-background-color:#f4ebf9;
-outline-style:solid;
-outline-width:.01em;
-outline-color:#d6d6d6;
+border-color: #665126;border-left-style: dotted;border-right-style: dotted;border-width: thin;
 }
-#top_nav ul li a.on{background: #d6d6d6;}
+#top_nav ul li a.on{border-color: white;border-left-style: dotted;border-right-style: dotted;border-width: thin;}
 .container{
     margin:0px 0px ;
     padding:0px 0px;
@@ -151,7 +164,7 @@ body {
     margin: 0px auto;
     width: 100%;
     font-family: AlethiaPro-Regular, Arial;
-    background-color: #f4ebf9;
+    background-color: white;
 }
 
 h1 {
@@ -215,42 +228,25 @@ header{
         width:320px;
         position:absolute;
         right:50%;
-        margin: 3px 0;
+        margin: 0;
         transform: translateX(50%);
-        text-align: center;
     }
 
     .author_info p{
         font-size:1em;
-        font-weight:800;
-        padding-left:0px;
-        /*! margin: auto; */
-        position: absolute;
-        right: 50%;
-        transform: translateX(50%);
-        width: 100%;
+        padding-left:30px;
+        margin: 0;
     }
     
      .author_info p.title{
-        font-size:.7em;
+        font-size:.8em;
+        padding-left:30px;
 
-        margin: auto;
-        padding-left: 0;
-        width: 100%;
-        position: absolute;
-        right: 50%;
-        top: 30px;
-        transform: translateX(50%);
     }
     
     .author_info p.institute{
-        font-size:.7em;
-        padding-left:0px;
-        margin: 0;
-        position: absolute;
-        top: 45px;
-        right: 50%;
-        transform: translateX(50%);
+        font-size:.8em;
+        padding-left:50px;
     }
 }
 /*ul.posts { 
