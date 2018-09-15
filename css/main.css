@@ -7,14 +7,15 @@
 /* defining classes */
 .intro{
     padding:0 10px;
-    width: 600px;
-    border-color: #90833d;
-    border-style: dotted;
-    border-width: .1em;
+    width: 50%;
+    
 }
 .intro:hover{
     
  
+}
+.intro p{
+    font-size: 1em;
 }
 .intro p a{
     color: black;
@@ -199,6 +200,13 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+    padding-left: 10px;
+}
+footer a{
+    color: black;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+        
 }
 
 @media (max-width: 960px) and (min-width:376px){
@@ -211,8 +219,13 @@ footer {
         right:50%;
         transform:translateX(50%)
     }
-    
-
+    .intro{
+        width: 50%;
+    }
+    .intro p{
+        font-size: .8em;
+        
+    }
     
 }
 
@@ -248,6 +261,14 @@ header{
         font-size:.8em;
         padding-left:50px;
     }
+     .intro{
+        width: 50%;
+    }
+    .intro p{
+        font-size: .8em;
+        
+    }
+    
 }
 /*ul.posts { 
     margin: 20px auto 40px; 
