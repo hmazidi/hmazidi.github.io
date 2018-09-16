@@ -193,7 +193,7 @@ a:hover {
 }*/
 
 p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.4em;
     color: #333;
 }
@@ -206,7 +206,7 @@ footer a{
     color: black;
     text-decoration: underline;
     text-decoration-style: dotted;
-        
+    font-size: 1em;
 }
 .email-icon{
     
