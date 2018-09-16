@@ -4,6 +4,11 @@
     src: url('/webfonts/3602DD_0_0.eot?#iefix') format('embedded-opentype'), url('/webfonts/3602DD_0_0.woff2') format('woff2'), url('/webfonts/3602DD_0_0.woff') format('woff'),url('/webfonts/3602DD_0_0.ttf') format('truetype');
 }
 
+.header-layout{
+    margin:0px 0px ;
+    padding:0px 0px;
+}
+
 /* defining classes */
 .intro{
     padding:0 10px;
@@ -22,9 +27,51 @@
     text-decoration: underline;
     text-decoration-style:dotted;
 }
-.top_nav{
-    float:right;
+
+nav.center-vesrion{
+    display: none;
+    position: static;
+    width: auto;
+    height: 30px;
+    text-align: center;
+    background-color: black;
+    border-top-style: solid;
+    border-top-color: white;
+    border-top-width: thin;
 }
+
+nav.center-vesrion ul{
+    text-align: center;
+    padding: 0 0;
+    margin:0;
+    display:  inline-block;
+    height: 100%;
+}
+nav.center-vesrion ul li{
+    font-weight:bold;
+    margin-right: 0px;
+    line-height:30px;
+    float: left;
+    list-style:  none;
+}
+
+nav.center-vesrion ul li a {
+    text-decoration: none;
+    color: #111;
+    font-weight:bold;
+    /* padding-top: 11px; */
+    /* padding-bottom:40px; */
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align:center;
+    overflow:hidden;
+    transition:border-color .3s ease-in-out;
+    float:  left;
+    height: 100%;
+    color: #eae5c7;
+    font-size: 1em;
+}
+
 .author_info{
     margin-left:5px;
     /* height: 80; */
@@ -90,7 +137,7 @@ h2 {
     background:#090909;
     overflow: hidden;
     height: 90px;
-    margin-bottom: 1px;
+    margin-bottom: 0;
 }
 .problemStatement{
 
@@ -217,7 +264,9 @@ footer a{
     bottom: 3px;
 }
 @media (max-width: 960px) and (min-width:376px){
-
+    nav.center-vesrion{
+        display:block;
+    }
     #top_nav{
         display:none;
     }
