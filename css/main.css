@@ -199,14 +199,14 @@ p {
 }
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+    font-size: 1em;
     padding-left: 10px;
 }
 footer a{
     color: black;
     text-decoration: underline;
     text-decoration-style: dotted;
-    font-size: 1em;
+        
 }
 .email-icon{
     
@@ -230,10 +230,15 @@ footer a{
         width: 50%;
     }
     .intro p{
-        font-size: .8em;
+        font-size: 1em;
         
     }
-    
+    footer p{
+        font-size: .8em;
+    }
+    #email{
+        font-size:.8em;
+    }
 }
 
 @media (max-width:375px){
@@ -275,7 +280,12 @@ header{
         font-size: .8em;
         
     }
-    
+    footer p{
+        font-size: .6em;
+    }
+    #email{
+        font-size:.6em;
+    }
 }
 /*ul.posts { 
     margin: 20px auto 40px; 
