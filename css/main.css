@@ -209,6 +209,10 @@ border-color: #665126;border-left-style: dotted;border-right-style: dotted;borde
     padding:0px 0px;
 }
 
+.myphoto{
+    border-radius: 50%;
+}
+
 html{
 
     background-image: url("../images/campusTree.jpg");
