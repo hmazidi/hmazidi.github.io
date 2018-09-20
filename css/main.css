@@ -210,7 +210,9 @@ border-color: #665126;border-left-style: dotted;border-right-style: dotted;borde
 }
 
 .myphoto{
-    border-radius: 50%;
+    border-radius: 0%;
+    width: 224px;
+    height: 300px;
 }
 
 html{
