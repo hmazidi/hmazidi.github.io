@@ -219,6 +219,7 @@ body {
     max-width: 960px;
     font-family: AlethiaPro-Regular, Arial;
     background-color: white;
+    opacity: .9;
 }
 
 h1 {
