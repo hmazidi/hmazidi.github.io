@@ -211,7 +211,10 @@ border-color: #665126;border-left-style: dotted;border-right-style: dotted;borde
 
 html{
 
-    background-image: url("../images/campusTreev2.jpg")
+    background-image: url("../images/campusTree.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 body {
     margin: 0px auto;
