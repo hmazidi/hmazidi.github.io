@@ -86,13 +86,13 @@ nav.center-vesrion ul li a {
     /* height: 80; */
     display: inline-block;
     width: 360px;
+    text-align: center;
 }
 .author_info p{
     \35 :bolder;
     font-size:1.5em;
     margin-top: 2px;
     margin-left: 2px;
-    text-align: center;
     margin-bottom: 1px;
     display: inline-block;
     letter-spacing: 4px;
@@ -103,17 +103,14 @@ nav.center-vesrion ul li a {
     font-weight:600;
     font-size: .8em;
     padding-bottom: 1px;
-    text-align: center;
     letter-spacing: normal;
-    padding-left: 40px;
 }
 .author_info p.institute{
     font-weight:600;
     font-size: .8em;
-    text-align: center;
     padding-bottom: 1px;
     letter-spacing: normal;
-    padding-left: 55px;
+ 
 }
 .splashHeader {
     width: 100%;
@@ -301,7 +298,8 @@ footer a{
     .author_info{
         position:absolute;
         right:50%;
-        transform:translateX(50%)
+        transform:translateX(50%);
+        text-align: center;
     }
     .intro{
         width: 50%;
@@ -332,23 +330,21 @@ header{
         right:50%;
         margin: 0;
         transform: translateX(50%);
+        text-align: center;
     }
 
     .author_info p{
         font-size:1em;
-        padding-left:30px;
         margin: 0;
     }
     
      .author_info p.title{
         font-size:.8em;
-        padding-left:30px;
 
     }
     
     .author_info p.institute{
         font-size:.8em;
-        padding-left:50px;
     }
      .intro{
         width: 50%;
