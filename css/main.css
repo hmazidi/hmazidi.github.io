@@ -208,9 +208,15 @@ border-color: #665126;border-left-style: dotted;border-right-style: dotted;borde
     margin:0px 0px ;
     padding:0px 0px;
 }
+
+html{
+
+    background-image: url("../images/chess.jpeg")
+}
 body {
     margin: 0px auto;
     width: 100%;
+    max-width: 960px;
     font-family: AlethiaPro-Regular, Arial;
     background-color: white;
 }
