@@ -300,7 +300,7 @@ footer a{
     position: relative;
     bottom: 3px;
 }
-@media (max-width: 960px) and (min-width:376px){
+@media (max-width: 960px) and (min-width:472px){
     nav.center-vesrion{
         display:block;
     }
@@ -328,7 +328,7 @@ footer a{
     }
 }
 
-@media (max-width:375px){
+@media (max-width:472px){
 
 header{
     width: 100%;
@@ -358,8 +358,18 @@ header{
     .author_info p.institute{
         font-size:.8em;
     }
+    .avatar{
+        float:none;
+        width: 100%;
+        margin-top:20px;
+        margin:0 auto;
+        margin-bottom: 10px;
+
+    }
      .intro{
-        width: 50%;
+        width: 100%;
+        text-align: center;
+
     }
     .intro p{
         font-size: .8em;
