@@ -166,7 +166,14 @@ h2 {
 }
 
 .postHeader{
+
     list-style:none;
+}
+
+.postHeader a{
+    color: #111;
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
 #top_nav{
     margin: 0px 0px auto;
@@ -216,7 +223,6 @@ border-color: #665126;border-left-style: dotted;border-right-style: dotted;borde
 }
 
 .myphoto{
-    border-radius: 50%;
     width: 150px;
     height: 200px;
     border: solid .15pt burlywood;
@@ -225,7 +231,7 @@ border-color: #665126;border-left-style: dotted;border-right-style: dotted;borde
 
 html{
 
-    background-image: url("../images/campusTree.jpg");
+    background-image: url("../images/chess.jpeg");
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -238,6 +244,12 @@ body {
     background-color: white;
     opacity: .9;
     height: fit-content;
+}
+article{
+    margin-left: 10px;
+    margin-right: 10px; 
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 h1 {
