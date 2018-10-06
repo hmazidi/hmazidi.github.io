@@ -333,6 +333,10 @@ footer a{
 
 @media (max-width:472px){
 
+    body{
+        opacity: 1;
+    }
+    
 header{
     width: 100%;
 }
