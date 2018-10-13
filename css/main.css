@@ -194,6 +194,7 @@ h2 {
     line-height:30px;
     float: left;
     list-style:  none;
+    height: 100%;
 }
 
 #top_nav ul li a {
