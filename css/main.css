@@ -214,7 +214,8 @@ h2 {
 
 #top_nav ul li a:hover {
 /*     text-decoration:underline; */
-border-color: #665126;border-left-style: dotted;border-right-style: dotted;border-width: thin;
+/* border-color: #665126;border-left-style: dotted;border-right-style: dotted;border-width: thin; */
+color: #fed97f;
 }
 #top_nav ul li a.on{border-color: white;border-left-style: dotted;border-right-style: dotted;border-width: thin;}
 .container{
