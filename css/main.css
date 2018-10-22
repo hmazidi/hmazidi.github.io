@@ -153,6 +153,23 @@ h2 {
 .projectList li{
     color: wheat;font-weight: bolder;
 }
+
+.projectSummary{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-style: solid;
+    border-width: thin;
+    border-color: white;
+}
+.projectSummary h4{
+    color: wheat;
+}
+.projectSummary p{
+   color:whitesmoke;
+}
 .problemStatement{
 
     outline-style:double;
@@ -182,6 +199,11 @@ h2 {
     color: #111;
     text-decoration: underline;
     text-decoration-style: dotted;
+}
+#reserachQuestionBox{
+border-style: dotted;
+border-width: 1px;
+padding: 3px;
 }
 #top_nav{
     margin: 0px 0px auto;
