@@ -147,6 +147,12 @@ h2 {
     height: 90px;
     margin-bottom: 0;
 }
+.projectList{
+    margin-left: 5px;
+}
+.projectList li{
+    color: wheat;font-weight: bolder;
+}
 .problemStatement{
 
     outline-style:double;

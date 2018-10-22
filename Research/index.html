@@ -1,0 +1,157 @@
+<html>
+
+<head>
+	<title>Research</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- link to main stylesheet -->
+	<link rel="shortcut icon" href="icon.png">
+	<link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="stylesheet" href="css/prism.css">
+	<script src="/prism.js"></script>
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Cardo&#10;&#10;:300,400,600,700&amp;lang=en">
+</head>
+
+<body>
+	<div id="MathJax_Message" style="display: none;"></div>
+	<div id="MathJax_Message" style="display: none;"></div>
+
+	<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+	<div class="header-layout">
+		<header class="full_box">
+			<div class="author_info">
+				<p> H E S A M &nbsp; M A Z I D I</p>
+				<p class="title">
+					PhD candidate in Electrical Engineering
+				</p>
+				<p class="institute">
+					Washington Univesity in St. Louis
+				</p>
+
+			</div>
+			<nav id="top_nav">
+				<ul>
+					<li>
+						<a href="/">Home</a>
+					</li>
+
+					<li>
+						<a class="on" href="/Blog">Blog</a>
+					</li>
+
+
+				</ul>
+
+			</nav>
+		</header>
+		<nav class="center-vesrion">
+			<ul>
+				<li>
+					<a href="/">Home</a>
+				</li>
+
+				<li>
+					<a class="on" href="/Blog">Blog</a>
+				</li>
+
+
+			</ul>
+
+		</nav>
+	</div>
+	<div class="container" style="border-top: solid;border-color: wheat;border-width: thin;">
+		<h2 style="color: wheat;text-align: center;margin: 0px;padding-top: 5px;">
+			Research
+		</h2>
+
+		<div style="margin-left: 5px;margin-right: 5px;">
+			<h3 style="color: wheat;">
+				Overview
+			</h3>
+
+			<p style="color: white;">
+				Zooming at nanoscale with increasing resolution, specificity, and sensitivity is the new frontier in nanoscale imaging. A
+				chief role is played by single emitters, such as fluorescent molecules, that report properties of their nano-neighborhood
+				through the imaging system, one at a time. Such controllable, optical sensors enable super-resolution imaging. Capturing
+				high-resolution images comes with several challenges of which
+				<em>algorithms</em> for inferring molecular parameters, amongst others, stand out. As a member of the Lew Lab and the Center
+				for Sensor Signal and Information Processing, I collaborate with optical designers and chemists to provide algorithmic
+				solutions for challenging problems.
+			</p>
+		</div>
+
+		<div class="projectList">
+			<li>
+				Minimizing Structural Bias in Single-Molecule Super-Resolution Microscopy
+			</li>
+		</div>
+
+		<div class="projectSummary">
+
+			<h4>
+				Background
+			</h4>
+
+			<p>
+				One of the powerful feature of Single-Molecule Localization Microscopy (SMLM) is providing quantitative information about
+				the structure of the target sample. The accuracy of this quantification hinges on the precision as well as accuracy of
+				the point localizations. From the beginning, the overlap of emitters' images was recognized as a significant algorithmic
+				challenge. An algorithm that can handle high-emitter density, thus image overlap, can not only reduce the acquisition
+				time but also can increase the confidence of measurements. Many algorithms have been developed to analyze high-density
+				images that otherwise cause significant errors in localizations.</p>
+
+			<h4>
+				Contribution
+			</h4>
+			<p>
+				In this research, we revisited the quantitative analyses of these algorithms with a different perspective in mind. In contrast
+				to previous studies, we quantified the structure of errors in resolving bio-inspired structures. These analyses revealed
+				that conventional metrics fail to characterize the
+				<i>bias</i>, or the accuracy, of the reconstructed structures. To minimize these biases, we built a RObust Statistical Estimation
+				algorithm, RoSE, which attempts to answer following questions:
+				<br> </p>
+
+			<p id="reserachQuestionBox">
+				How can we estimate the likelihood that a fluorescent molecule is emitting light from each pixel within an object domain?
+				And how can we estimate the likelihood that a molecule within a pixel belongs to an unknown target structure? And how
+				can we estimate the likelihood that a molecule within a pixel belongs to an unknown target structure?
+			</p>
+
+			<p>
+				RoSE works for arbitrary 3D point spread functions (PSFs) and biological structures. It calculates the likelihood that each
+				image pixel contains a molecule, and not background light, by leveraging spatial sparsity. Further, by analyzing blinking
+				statistics, it can also calculate the confidence of each pixel in truly representing the target structure. RoSE thereby
+				minimizes false localizations that cause bias and artifacts in super-resolution microscopy.
+			</p>
+			<h4>
+				Article
+			</h4>
+			<li style="color: whitesmoke;">
+				<b>H. Mazidi</b>, J. Lu, A. Nehorai, and M. D. Lew,
+				<a href="https://www.nature.com/articles/s41598-018-31366-w" style="text-decoration: dotted;color: wheat;text-decoration-line: underline;">
+				“Minimizing Structural Bias in Single-Molecule Super-Resolution Microscopy,”</a>
+				<i>Sci. Rep.</i>
+				<b>8</b>, 13133 (2018)
+			</li>
+		</div>
+	</div>
+
+
+
+	<footer>
+		<p>
+			© 2018 Hesam Mazidi
+		</p>
+		<img class="email-icon" src="/EmailLogo.png">
+		<a id="email" href="mailto:hesam.creative@gmail.com" style="color: whitesmoke;">
+			Email me! </a>
+
+	</footer>
+
+
+
+
+</body>
+
+</html>
