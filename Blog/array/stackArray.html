@@ -74,9 +74,8 @@
         stack=[]
 
         for i,v in enumerate(T):
-            
             #check if a positive change happened
-            while stack and T[stack[-1]]<v:
+			while stack and T[stack[-1]]<=v-1:
                 t=stack.pop()
                 res[t]=i-t
             stack.append(i)
