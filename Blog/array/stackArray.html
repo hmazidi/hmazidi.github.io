@@ -1,0 +1,92 @@
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>composing the code!</title>
+			<link rel="shortcut icon" href="../icon.png">
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+		        <link rel="stylesheet" type="text/css" href="/css/prism.css">
+			<script type="text/javascript" src="/prism.js"></script>
+			<style>
+					html{
+						background-image:none;
+					}
+					</style>
+	  </head>
+
+	  <body>
+
+	<script type="text/javascript" async
+	  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+
+	<article>
+		<p> In this article, we explore the idea of stack by solving two related questions. The idea
+            of stack is to allow temporary information be stored and used in a later time by pushing
+            and poping operations.
+            </p>  
+		  <section>
+		  <h2 class="splashHeader">
+		  Slide while traverse! 
+		  </h2>
+	<p class="problemStatement"> <b> Given a list of daily temperatures \(T\), 
+        return a list such that, for each day in the input, tells you how many 
+        days you would have to wait until a warmer temperature.
+         If there is no future day for which this is possible, put \(0\) instead 
+         (<a href="https://leetcode.com/problems/daily-temperatures">credit </a>).
+		</b> </p>
+	 
+		  <p> Our first clue is that if bunch of consecutive temperatures are decreasing, as soon as 
+              we see a positive change in the temperature we need to trigger some housekeeping! 
+              Particularly, we know that all the days with lower temperature 
+              than the current day we can exactly compute the number of days we need to wait. Further, if some of the earlier
+              days have even higher temperature we need to keep the "hot" days in order. This means that 
+              when we pruned the days with lower temperature, we put the current day in the correct position 
+              with respect to hot days.</p>
+
+              <p>
+                  Stack is useful here since we can push the days into it and when we see a 
+                  positive change we pop out the days with lower temperature and push the current day
+				  into it. This ensures that we keep the correct order w.r.t. hot days! Note that
+				  a sub-optimal way to solve this problem is to check for each day the condition of
+				  the positive change. This approach gives \(O(N^2)\) complexity.
+              </p>
+
+
+              
+    <p>
+	<pre>
+	<code class="language-python">
+	Class Solution{
+        def dailyTemperatures(self, T):
+        """
+        :type T: List[int]
+        :rtype: List[int]
+        """
+
+        if not T:
+            
+            return []
+        
+        res=[0]*len(T)
+        stack=[]
+
+        for i,v in enumerate(T):
+            
+            #check if a positive change happened
+            while stack and T[stack[-1]]<v:
+                t=stack.pop()
+                res[t]=i-t
+            stack.append(i)
+        return res   
+            
+
+	</code>
+	</pre>
+	</p>
+		  
+	</section>
+</article>
+</body>
+</html>
