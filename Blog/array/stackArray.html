@@ -25,10 +25,11 @@
 		<p> In this article, we explore the idea of stack by solving two related questions. The idea
             of stack is to allow temporary information be stored and used in a later time by pushing
             and poping operations.
-            </p>  
+			</p>  
+			
 		  <section>
 		  <h2 class="splashHeader">
-		  Slide while traverse! 
+		  push/pop while traverse! 
 		  </h2>
 	<p class="problemStatement"> <b> Given a list of daily temperatures \(T\), 
         return a list such that, for each day in the input, tells you how many 
@@ -58,7 +59,7 @@
     <p>
 	<pre>
 	<code class="language-python">
-	Class Solution{
+	Class Solution:
         def dailyTemperatures(self, T):
         """
         :type T: List[int]
@@ -79,9 +80,8 @@
                 t=stack.pop()
                 res[t]=i-t
             stack.append(i)
-        return res   
-            
-
+		return res   
+			
 	</code>
 	</pre>
 	</p>
