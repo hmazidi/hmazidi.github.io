@@ -87,8 +87,18 @@
                 int main()
                 {
                     const int x = 5;
-                    PrintOut(x); // expect 7 be shown on console
-                    std::cout << x; // expect 5 be shown on console 
+                    int y = 5;
+                    const int &z = y; // z is a reference to y as a constant integer
+
+                    PrintOut(x); // expect 7 be shown 
+                    std::cout << x; // expect 5 be shown  
+
+                    PrintOut(y); // expect 7 to be shown 
+                    std::cout << y; // expect 5 to be shown
+                    
+                    PrintOut(z); // expect 7 to be shown
+                    std::cout << z; // expect 5 to be shown
+                
                     std::cin.get();
                 }
 
