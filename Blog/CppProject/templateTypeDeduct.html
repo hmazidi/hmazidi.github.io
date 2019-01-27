@@ -28,14 +28,13 @@
         </p>
 
         <p>
-            <pre>
-                    <code class="language-cpp">
+        <pre>
+        <code class="language-cpp">
                     
-                            template<typename T>
-                            void PrintOut(intputType input);
-                            
-                    </code>
-                    </pre>
+        template<typename T>
+        void PrintOut(intputType input);                
+        </code>
+        </pre>
         </p>
 
         <p>
@@ -67,30 +66,30 @@
             Let's check these in action.
             <p>
                 <pre>
-                            <code class="language-cpp">
+                <code class="language-cpp">
                             
-                                    #include <iostream>
-                                            #include <string>
-                                            
-                                            
-                                            template<typename T>
-                                            void PrintOut(T input)
-                                            {
-                                                Intput=intput+2;
-                                                std::cout << input<< std::endl;
-                                            }
-                                            
-                                            
-                                            int main()
-                                            {
-                                                const int x = 5;
-                                                PrintOut(x); // expect 7 be shown on console
-                                                std::cout << x; // expect 5 be shown on console 
-                                                std::cin.get();
-                                            }
-                    
-                            </code>
-                            </pre>
+                #include <iostream>
+                #include <string>
+                
+                
+                template<typename T>
+                void PrintOut(T input)
+                {
+                    Intput=intput+2;
+                    std::cout << input<< std::endl;
+                }
+                
+                
+                int main()
+                {
+                    const int x = 5;
+                    PrintOut(x); // expect 7 be shown on console
+                    std::cout << x; // expect 5 be shown on console 
+                    std::cin.get();
+                }
+
+                </code>
+                </pre>
             </p>
 
         </p>
