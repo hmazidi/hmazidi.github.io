@@ -84,7 +84,7 @@
 	</code>
 	</pre>
 	</p>
-
+	<br>
 	<p class="problemStatement"> <b> Given an integer array, 
 		you need to find one continuous subarray that if you only 
 		sort this subarray in ascending order, then the whole array will
@@ -92,16 +92,17 @@
 		You need to find the shortest such subarray and output its length. 
          (<a href="https://leetcode.com/problems/shortest-unsorted-continuous-subarray/">credit </a>).
 		</b> </p>
-		  
+		
+
 		<p> So why stack is useful here? The key point is that as we traverse the array,
 			we need to know the <i>left-most element</i> (LME) that is larger than the current element.
 			Also, as we are going backward to find the LME that is larger than the current one, 
 			we can delete those elements that are right to the LME. This justifies the
-			pop() operation and thus the use of stack.
+			pop() operation and thus the use of stack.<br>
 
 			Similarly, we want to find  the right-most element (RME) that is larger than the 
 			current element. Again, it is necessary to take it into account for otherwise
-			our sorting is wrong. The logic is the same as above.
+			our sorting is wrong. The logic is the same as above.<br>
 
 			What is the time complexity? we need to  visit all the elements of the array, thereby
 			the lower bound is \(O(N)\). Now for backtracking, the worse situation is that we need
