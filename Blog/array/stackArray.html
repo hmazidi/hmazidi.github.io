@@ -84,7 +84,121 @@
 	</code>
 	</pre>
 	</p>
+
+	<p class="problemStatement"> <b> Given an integer array, 
+		you need to find one continuous subarray that if you only 
+		sort this subarray in ascending order, then the whole array will
+		 be sorted in ascending order, too.
+		You need to find the shortest such subarray and output its length. 
+         (<a href="https://leetcode.com/problems/shortest-unsorted-continuous-subarray/">credit </a>).
+		</b> </p>
 		  
+		<p> So why stack is useful here? The key point is that as we traverse the array,
+			we need to know the <i>left-most element</i> (LME) that is larger than the current element.
+			Also, as we are going backward to find the LME that is larger than the current one, 
+			we can delete those elements that are right to the LME. This justifies the
+			pop() operation and thus the use of stack.
+
+			Similarly, we want to find  the right-most element (RME) that is larger than the 
+			current element. Again, it is necessary to take it into account for otherwise
+			our sorting is wrong. The logic is the same as above.
+
+			What is the time complexity? we need to  visit all the elements of the array, thereby
+			the lower bound is \(O(N)\). Now for backtracking, the worse situation is that we need
+			to go back N times, but this happens once thanks to stack. Thus complexity is still
+			\(O(N)\).  
+		</p>
+
+		<p>
+		<pre>
+		<code class="language-python">
+
+			class Solution:
+			def findUnsortedSubarray(self, nums):
+				"""
+				:type nums: List[int]
+				:rtype: int
+				"""
+				if len(nums)<2:
+		
+					return 0
+
+				left_indx=len(nums)
+				right_indx=-1
+				
+				// let's find the left-most element and its index
+				// stack holds the indices of the recent elements
+				stack=[0]
+				
+				for i in range(len(nums)-1):
+
+					// if increasing add the element to the stack
+					if nums[i]<=nums[i+1]:
+						stack.append(i+1)
+
+					elif stack:
+						
+						// get the top element in the stack
+						cur_indx=stack.pop()
+						// update the left_index for now
+						left_indx=min(left_indx,cur_indx)
+
+						// if the element with index cur_indx 
+						// is less that or equal than nums[i+1], we are done 
+						// with backtracking 
+
+						while(nums[cur_indx]>nums[i+1]):
+
+							// update
+							left_indx=min(left_indx,cur_indx-1)
+
+							// next element in the stack
+							if stack:
+								cur_indx=stack.pop()
+							else:
+								break
+						// push back the found element to the stack 		
+						stack.append(cur_indx)
+				
+
+				// do the same for the right-most element	
+
+				stack=[len(nums)-1]
+				
+				for i in range(len(nums)-1,0,-1):
+					
+					if nums[i]>=nums[i-1]:
+						stack.append(i-1)
+
+					elif stack:
+						
+						cur_indx=stack.pop()
+
+						right_indx=max(right_indx,cur_indx)
+
+						while(nums[cur_indx]< nums[i-1]):
+
+							right_indx= max(right_indx,cur_indx+1)
+
+							if stack:
+								cur= stack.pop()
+							else:
+								break
+						stack.append(cur_indx)
+						
+							
+				// calculate the number of elements between two indices
+				if left_indx==len(nums) and right_indx==-1:
+
+					return 0
+				else:
+				
+					return right_indx-left_indx-1
+				
+
+				</code>
+				</pre>
+				</p>
 	</section>
 </article>
 </body>
