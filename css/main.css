@@ -23,12 +23,13 @@
   padding:0 10px;
     width: 50%;
     height:200px;
+    margin-bottom:1px;
 }
 
 .logoText{
     padding:0 10px;
     margin-left:160px;
-    margin-top:45px;
+    margin-top:0px;
     text-align:center;
     width: 100%;
     font-size:large;
