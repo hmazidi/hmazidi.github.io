@@ -261,6 +261,13 @@ color: #fed97f;
     box-shadow: 0 0 10px rgb(0,0,36);
 }
 
+.logo{
+    width: 200px;
+    height: 200px;
+    border: solid .15pt burlywood;
+    box-shadow: 0 0 10px rgb(0,0,36);
+}
+
 html{
 
     background-image: url("../images/chess.jpeg");
