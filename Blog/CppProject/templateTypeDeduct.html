@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>composing the code!</title>
+    <link rel="shortcut icon" href="../icon.png">
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/prism.css">
+    <script type="text/javascript" src="/prism.js"></script>
+    <style>
+        html {
+            background-image: none;
+        }
+        li {
+         list-style-type: circle;
+           }
+    </style>
+</head>
+
+<body>
+
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <article>
+        <p>
+
+            Let us focus on understanding three main categories of type deduction. Consider a general template as follows:
+        </p>
+
+        <p>
+        <pre>
+        <code class="language-cpp">
+                    
+        template < typename T>
+        void PrintOut(intputType input);                
+        </code>
+        </pre>
+        </p>
+
+        <p>
+            We are interested in how
+            <i>printOut</i> function processes the input depending upon
+            <i>intputType</i>.
+            <h3>
+                input is passed by value
+            </h3>
+
+            When
+            <i>intputType</i> is simply
+            <i>T</i>, a completely new object that is a copy of input is processed by
+            <i>PrintOut</i>. Since a new object will be created, it makes sense to have the following deduction rules when
+            calling
+            <i>PrintOut</i>:
+            <ul>
+                <il>
+                    If type of
+                    <i>exp</i> is
+                    <b>reference</b>, it is ignored.
+                </il>
+                <br>
+                <il>
+                    After denying the reference-ness, if
+                    <i>exp</i> is constant it should be ignored, too.
+                </il>
+
+            </ul>
+            Let's check these in action.
+            <p>
+                <pre>
+                <code class="language-cpp">
+                            
+                #include < iostream>
+                #include < string>
+                
+                
+                template< typename T>
+                void PrintOut(T input)
+                {
+                    intput=intput+2;
+                    std::cout << input<< std::endl;
+                }
+                
+                
+                int main()
+                {
+                    const int x = 5;
+                    int y = 5;
+                    const int &z = y; // z is a reference to y as a constant integer
+
+                    PrintOut(x); // expect 7 be shown 
+                    std::cout << x; // expect 5 be shown  
+
+                    PrintOut(y); // expect 7 to be shown 
+                    std::cout << y; // expect 5 to be shown
+                    
+                    PrintOut(z); // expect 7 to be shown
+                    std::cout << z; // expect 5 to be shown
+                
+                    std::cin.get();
+                }
+
+                </code>
+                </pre>
+            </p>
+
+        </p>
+
+
+    </article>
+</body>
+
+</html>

@@ -19,6 +19,21 @@
 }
 
 /* defining classes */
+.uniDesc{
+  padding:0 10px;
+    width: 50%;
+    height:200px;
+    margin-bottom:1px;
+}
+
+.logoText{
+    padding:0 10px;
+    margin-left:160px;
+    margin-top:0px;
+    text-align:center;
+    width: 100%;
+    font-size:large;
+}
 .intro{
     padding:0 10px;
     width: 50%;
@@ -259,6 +274,12 @@ color: #fed97f;
     height: 200px;
     border: solid .15pt burlywood;
     box-shadow: 0 0 10px rgb(0,0,36);
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    float: left;
 }
 
 html{
