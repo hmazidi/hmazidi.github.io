@@ -342,6 +342,7 @@ h1 {
 
 h2{
     font-family: Cardo, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: none;
 }
 
 footer ul {
