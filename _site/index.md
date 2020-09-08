@@ -1,72 +1,20 @@
+<!-- ---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+#layout: home
+--- -->
 <html>
 
-<head>
-	<title>Hesam Mazidi</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<!-- link to main stylesheet -->
-	<link rel="shortcut icon" href="icon.png" />
-	<link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css" />
-	<link rel="stylesheet" type="text/css" href="/css/main.css" />
-	<link rel="stylesheet" href="css/prism.css" />
-	<script src="/prism.js"></script>
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Cardo&#10;&#10;:300,400,600,700&amp;lang=en" />
-
-</head>
+{% include head.html %}
 
 <body>
 
-	<div class="header-layout">
-		<header class="full_box">
-			<div class="author_info">
-				<p> H E S A M &nbsp; M A Z I D I</p>
-				<!-- <p class="title">
-					PhD candidate in Electrical Engineering
-				</p>
-				<p class="institute">
-					Washington University in St. Louis
-				</p> -->
-
-			</div>
-			<nav id="top_nav">
-				<ul>
-					<li>
-						<a href="/">Home</a>
-					</li>
-					<li>
-						<a href="/Publication"> Pulication</a>
-					</li>
-
-					<!-- <li>
-						<a href="/Blog">Blog</a>
-					</li> -->
-
-
-				</ul>
-
-			</nav>
-		</header>
-		<nav class="center-vesrion">
-			<ul>
-				<li>
-					<a href="/">Home</a>
-				</li>
-				<li>
-					<a href="/Publication"> Publication</a>
-				</li>
-				<!-- <li>
-					<a href="/Blog">Blog</a>
-				</li> -->
-
-
-			</ul>
-
-		</nav>
-	</div>
+	{% include navigator_bar.html %}
 
 	
 	<div class="container">
 		<div class="avatar">
-			<img class="myphoto" src="../images/Hesam.jpg" />
+			<img class="myphoto" src="../images/Hesam.jpg">
 		</div>
 		<div class="intro">
 			<h2>Welcome to my page!
@@ -74,7 +22,7 @@
 			<p> I recently earned a Doctrate in Electrical Engineering from
 				<a href="https://www.ese.wustl.edu"> Washington University in St. Louis </a>, where I was fortunate to be advised by Prof. Matthew Lew and Prof. Arye Nehorai. My dissertation focued on developing advanced algorithms and methods for
 				high-performance single-molecule super-resolution microscopy. Escaping from math and science, I play
-				chess and enjoy <a href="./performance/index.html"> playing </a>
+				chess and enjoy <a href='./performance/index.html'> playing </a>
 				classical guitar pieces.
 			</p>
 		</div>
@@ -110,7 +58,7 @@
 
 		</div> -->
 
-		<div class="news_div">
+		<div class=news_div>
 		<h2 style="padding:0 10px; margin:5px">
 		News
 		</h2>
@@ -130,15 +78,7 @@
 		<!-- /.blurb -->
 	</div>
 	<!-- /.container -->
-	<footer>
-		<p>
-			© 2020 Hesam Mazidi
-		</p>
-		<img class="email-icon" src="/images/EmailLogo.png" />
-		<a id="email" href="mailto:hesam.creative@gmail.com">
-			Email me! </a>
-
-</footer>
+	{% include footer.html %}
 
 
 
